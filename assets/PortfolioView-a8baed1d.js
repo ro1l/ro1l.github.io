@@ -1,1 +1,0 @@
-import{m as e,p as r,o as c,c as s}from"./index-46206435.js";import{_ as p}from"./_plugin-vue_export-helper-c27b6911.js";const n={setup(){const o=e();return{productId:r(()=>o.params.productId)}}};function a(o,t,u,d,i,m){return c(),s("div",null," hi ")}const l=p(n,[["render",a]]);export{l as default};
