@@ -35,6 +35,27 @@ const isPortfoliosActive = useElementVisibility('portfolios');
 const isContactActive = useElementVisibility('contact');
 
 
+const container = ref(null);
+const original = ref(null);
+
+
+onMounted(() => {
+  const cloned = original.value.cloneNode(true);
+  container.value.appendChild(cloned)
+  
+  const threshold = 120
+  window.scrollTo(0, threshold)
+  
+  window.addEventListener('scroll', () => {
+    const halfHeight = original.value.clientHeight
+  
+    if (window.scrollY > halfHeight + threshold) {
+      window.scrollTo(0, window.scrollY - halfHeight)
+    } else if (window.scrollY < threshold) {
+      window.scrollTo(0, halfHeight + window.scrollY)
+    }
+  })
+});
 </script>
 
 <template>
@@ -44,11 +65,14 @@ const isContactActive = useElementVisibility('contact');
   :isPortfoliosActive = isPortfoliosActive
   :isContactActive = isContactActive />
 
-  <div class="container w-8/12 ml-auto mr-24">
-    <BannerView />
-    <AboutView />
-    <SkillsView />
-    <PortfoliosView />
-    <ContactView />
+
+  <div class="container w-8/12 ml-auto mr-24" ref="container">
+    <div ref="original">
+      <BannerView />
+      <AboutView />
+      <SkillsView />
+      <PortfoliosView />
+      <ContactView />
+    </div>
   </div>
 </template>
