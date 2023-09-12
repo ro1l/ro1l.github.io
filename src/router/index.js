@@ -13,6 +13,11 @@ const router = createRouter({
       name: "portfolio",
       component: () => import("../views/PortfolioView.vue"),
     },
+    {
+      path: "/test",
+      name: "test",
+      component: () => import("../views/TestView.vue"),
+    },
   ],
   scrollBehavior(to) {
     if (to.hash) {
