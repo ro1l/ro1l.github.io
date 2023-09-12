@@ -6,18 +6,12 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      components: {
-        default: () => import("../views/HomeView.vue"),
-      },
-      children: [
-        {
-          path: "portfolio/:portfolioId",
-          name: "portfolio",
-          components: {
-            default: () => import("../views/PortfolioView.vue"),
-          },
-        },
-      ],
+      component: () => import("../views/HomeView.vue"),
+    },
+    {
+      path: "/portfolio/:portfolioName",
+      name: "portfolio",
+      component: () => import("../views/PortfolioView.vue"),
     },
   ],
   scrollBehavior(to) {
