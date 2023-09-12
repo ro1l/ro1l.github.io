@@ -12,7 +12,7 @@
 
       <div class="w-6/12 h-100">
         <div class="flex justify-center items-center">
-          <img class="object-cover h-56 w-4/12" src="../assets/media/img_one.jpg" alt="">
+          <img class="object-cover h-56 w-4/12" src="../assets/media/personal_photos2.jpg" alt="">
         </div>
       </div>
     </div>
