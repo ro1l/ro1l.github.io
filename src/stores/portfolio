@@ -1,0 +1,24 @@
+{
+  name: 'name',// 專案名稱
+  skills: [], // 專案技能
+  tools: [], // 專案使用工具
+  link: [ // 專案連結
+    {
+      title: 'Github',
+      link: '',
+    },
+    {
+      title: 'Figma',
+      link: '',
+    },
+    {
+      title: 'Demo',
+      link: '',
+    }
+  ],
+  info: '', // 專案簡介
+  idea: '', // 設計理念
+  imgMain: '', // 專案主圖
+  imgSub: '', // 專案次圖
+  imgOther: [], // 專案其他圖片
+},
