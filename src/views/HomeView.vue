@@ -37,7 +37,7 @@ const isContactActive = useElementVisibility('contact');
 
 <template>
   <TopBar />
-
+123123
   <nav class="px-12 py-24
     flex flex-col
     fixed bottom-0 left-0">
