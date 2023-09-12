@@ -11,7 +11,7 @@ const router = createRouter({
       },
       children: [
         {
-          path: ":portfolioId",
+          path: "portfolio/:portfolioId",
           name: "portfolio",
           components: {
             default: () => import("../views/PortfolioView.vue"),
