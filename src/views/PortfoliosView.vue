@@ -13,9 +13,9 @@
 <template>
   <section id="portfolios" class="w-100 py-72">
     <div class="columns-1 w-3/12 m-auto">
-      <img src="../assets/media/img_one.jpg" class=" h-72 object-cover mb-10" alt=""
+      <img src="../assets/media/personal_photos.jpg" class=" h-72 object-cover mb-10" alt=""
         @click.prevent="getPortfolio(123)">
-      <img src="../assets/media/img_one.jpg" class=" h-72 object-cover mb-10" alt="">
+      <img src="../assets/media/personal_photos.jpg" class=" h-72 object-cover mb-10" alt="">
     </div>
   </section>
 </template>
