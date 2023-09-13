@@ -42,8 +42,8 @@
         <h2 class="text-5xl mb-10">專案簡介</h2>
         <p class="font-light text-lg text-gray-400 leading-10 ">{{ item.info }}</p>
       </div>
-      <div class="w-full">
-        <img class="w-full" :src="`../assets/media/${item.imgSub}`" alt="">
+      <div class="w-full" v-if="item.imgSub">
+        <img class="w-full" :src="`/src/assets/media/${item.imgSub}`" alt="">
       </div>      
       <div class="py-32 px-32 w-full">
         <h2 class="text-5xl mb-10">設計理念</h2>
@@ -54,7 +54,7 @@
         <img class="w-full mb-20" :src="img" alt="">
       </div>
 
-      <img src="../assets/media/rolling-main.jpg" class="w-56 h-72 object-cover mb-10" alt="">    
+      <!-- <img src="../assets/media/rolling-main.jpg" class="w-56 h-72 object-cover mb-10" alt="">     -->
       <NextPortfolioCard />
     </div>
   </div>
