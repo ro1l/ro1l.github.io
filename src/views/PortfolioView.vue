@@ -54,6 +54,7 @@
         <img class="w-full mb-20" :src="img" alt="">
       </div>
 
+      <img src="../assets/media/rolling-main.jpg" class="w-56 h-72 object-cover mb-10" alt="">    
       <NextPortfolioCard />
     </div>
   </div>
