@@ -44,22 +44,7 @@
         <p class="font-light text-lg text-gray-400 leading-10 ">{{ item.info }}</p>
       </div>
       <div class="w-full">
-        1
-        <img class="w-full" :src="`src/assets/media/${item.imgSub}`" alt="">
-        2
-        <img class="w-full" :src="`/src/assets/media/${item.imgSub}`" alt="">
-        3
-        <img class="w-full" :src="`./src/assets/media/${item.imgSub}`" alt="">
-        4
-        <img class="w-full" :src="`../src/assets/media/${item.imgSub}`" alt="">
-        5
-        <img class="w-full" :src="`assets/media/${item.imgSub}`" alt="">
-        6
-        <img class="w-full" :src="`/assets/media/${item.imgSub}`" alt="">
-        7
-        <img class="w-full" :src="`./assets/media/${item.imgSub}`" alt="">
-        8
-        <img class="w-full" :src="`../assets/media/${item.imgSub}`" alt="">
+        <img class="w-full mb-20" :src="item.imgSub" alt="專案圖片">
       </div>      
       <div class="py-32 px-32 w-full">
         <h2 class="text-5xl mb-10">設計理念</h2>
@@ -67,7 +52,7 @@
       </div>
       <div class="w-full"
         v-for="img in item.imgOther" :key="img">
-        <img class="w-full mb-20" :src="img" alt="">
+        <img class="w-full mb-20" :src="img" alt="專案圖片">
       </div>
 
       <NextPortfolioCard />
