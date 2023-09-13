@@ -16,7 +16,7 @@
 
 <template>
   <Navbar />
-  {{ item.imgSub }}
+
   <div class="container w-8/12 ml-auto mr-24 py-28">
     <div class="text-center w-100
       flex flex-col items-center">
@@ -43,7 +43,7 @@
         <p class="font-light text-lg text-gray-400 leading-10 ">{{ item.info }}</p>
       </div>
       <div class="w-full">
-        <img class="w-full" :src="`src/assets/media/${item.imgSub}`" alt="">
+        <img class="w-full" :src="`/src/assets/media/${item.imgSub}`" alt="">
       </div>      
       <div class="py-32 px-32 w-full">
         <h2 class="text-5xl mb-10">設計理念</h2>
