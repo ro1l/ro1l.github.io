@@ -19,7 +19,8 @@
 
   <div class="container w-8/12 ml-auto mr-24 py-28">
     <div class="text-center w-100
-      flex flex-col items-center">
+      flex flex-col items-center"
+      v-if="item">
       <h1 class="text-8xl pb-32 font-Melodrama">{{ item.name }}</h1>
       <div class="mb-12">
         <h3 class="pb-2">skills:</h3>
@@ -42,7 +43,7 @@
         <h2 class="text-5xl mb-10">專案簡介</h2>
         <p class="font-light text-lg text-gray-400 leading-10 ">{{ item.info }}</p>
       </div>
-      <div class="w-full" v-if="item.imgSub">
+      <div class="w-full">
         <img class="w-full" :src="`../assets/media/media/${item.imgSub}`" alt="">
       </div>      
       <div class="py-32 px-32 w-full">
