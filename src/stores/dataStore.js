@@ -46,8 +46,8 @@ export const useDataStore = defineStore('data', () => {
         "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU", // 專案主圖
       imgSub: "/src/assets/media/rolling-main.jpg", // 專案次圖
       imgOther: [
-        "../assets/media/rolling-main.jpg",
-        "/assets/media/rolling-main.jpg",
+        "../assets/media/personal-photos2.jpg",
+        "./assets/media/rolling-main.jpg",
       ], // 專案其他圖片
     },
     {
