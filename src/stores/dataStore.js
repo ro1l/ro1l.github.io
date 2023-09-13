@@ -44,10 +44,10 @@ export const useDataStore = defineStore('data', () => {
       idea: "設計理念融合了質感和高度的功能性，以打造一個專為重機愛好者而設的網站。在網站的視覺設計和使用者體驗上，避免過度的視覺干擾，並注重清晰的資訊架構，使用者能夠輕鬆地找到所需的資訊，享受簡約而高級的網站體驗。", // 設計理念
       imgMain:
         "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU", // 專案主圖
-      imgSub: "/src/assets/media/rolling-main.jpg", // 專案次圖
+      imgSub: "../assets/media/personal-photos2.jpg", // 專案次圖
       imgOther: [
         "../assets/media/personal-photos2.jpg",
-        "./assets/media/rolling-main.jpg",
+        "../assets/media/rolling-main.jpg",
       ], // 專案其他圖片
     },
     {

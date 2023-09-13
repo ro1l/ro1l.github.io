@@ -16,7 +16,7 @@
 
 <template>
   <Navbar />
-
+  
   <div class="container w-8/12 ml-auto mr-24 py-28">
     <div class="text-center w-100
       flex flex-col items-center">
