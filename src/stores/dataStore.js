@@ -47,7 +47,7 @@ export const useDataStore = defineStore('data', () => {
       imgSub: "rolling-main.jpg", // 專案次圖
       imgOther: [
         // "src/assets/media/rolling-main.jpg",
-        "../assets/media/rolling-main.jpg",
+        // "../assets/media/rolling-main.jpg",
       ], // 專案其他圖片
     },
     {

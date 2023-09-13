@@ -44,6 +44,21 @@
         <p class="font-light text-lg text-gray-400 leading-10 ">{{ item.info }}</p>
       </div>
       <div class="w-full">
+        1
+        <img class="w-full" :src="`src/assets/media/${item.imgSub}`" alt="">
+        2
+        <img class="w-full" :src="`/src/assets/media/${item.imgSub}`" alt="">
+        3
+        <img class="w-full" :src="`./src/assets/media/${item.imgSub}`" alt="">
+        4
+        <img class="w-full" :src="`../src/assets/media/${item.imgSub}`" alt="">
+        5
+        <img class="w-full" :src="`assets/media/${item.imgSub}`" alt="">
+        6
+        <img class="w-full" :src="`/assets/media/${item.imgSub}`" alt="">
+        7
+        <img class="w-full" :src="`./assets/media/${item.imgSub}`" alt="">
+        8
         <img class="w-full" :src="`../assets/media/${item.imgSub}`" alt="">
       </div>      
       <div class="py-32 px-32 w-full">
@@ -55,7 +70,6 @@
         <img class="w-full mb-20" :src="img" alt="">
       </div>
 
-      <img src="../assets/media/rolling-main.jpg" class="w-56 h-72 object-cover mb-10" alt="">    
       <NextPortfolioCard />
     </div>
   </div>
