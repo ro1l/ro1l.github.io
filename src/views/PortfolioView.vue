@@ -16,7 +16,7 @@
 
 <template>
   <Navbar />
-  
+  {{ item.imgSub }}
   <div class="container w-8/12 ml-auto mr-24 py-28">
     <div class="text-center w-100
       flex flex-col items-center">
@@ -43,7 +43,7 @@
         <p class="font-light text-lg text-gray-400 leading-10 ">{{ item.info }}</p>
       </div>
       <div class="w-full">
-        <img class="w-full" :src="`../assets/media/${item.imgSub}`" alt="">
+        <img class="w-full" :src="`src/assets/media/${item.imgSub}`" alt="">
       </div>      
       <div class="py-32 px-32 w-full">
         <h2 class="text-5xl mb-10">設計理念</h2>
@@ -53,7 +53,7 @@
         v-for="img in item.imgOther" :key="img">
         <img class="w-full mb-20" :src="img" alt="">
       </div>
-      <img src="../assets/media/personal-photos2.jpg" class="w-56 h-72 object-cover mb-10" alt="">  
+
       <NextPortfolioCard />
     </div>
   </div>
