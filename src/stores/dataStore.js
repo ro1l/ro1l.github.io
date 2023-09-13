@@ -44,10 +44,10 @@ export const useDataStore = defineStore('data', () => {
       idea: "設計理念融合了質感和高度的功能性，以打造一個專為重機愛好者而設的網站。在網站的視覺設計和使用者體驗上，避免過度的視覺干擾，並注重清晰的資訊架構，使用者能夠輕鬆地找到所需的資訊，享受簡約而高級的網站體驗。", // 設計理念
       imgMain:
         "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU", // 專案主圖
-      imgSub: "/src/assets/media/rolling_main.jpg", // 專案次圖
+      imgSub: "/src/assets/media/rolling-main.jpg", // 專案次圖
       imgOther: [
-        "/src/assets/media/rolling_main.jpg",
-        "/src/assets/media/rolling_main.jpg",
+        "/media/rolling-main.jpg",
+        "/src/assets/media/rolling-main.jpg",
       ], // 專案其他圖片
     },
     {
@@ -67,11 +67,11 @@ export const useDataStore = defineStore('data', () => {
       ],
       info: "台北捷運APP優化專案旨在提升用戶體驗（UI/UX），使APP介面更簡潔清楚、易於導航，從而增強用戶對捷運系統的使用滿意度。該專案專注於重新設計和改進現有的台北捷運APP，以滿足現代用戶的需求，提供更便捷、流暢和吸引人的用戶界面。", // 專案簡介
       idea: "以簡約設計原則為核心，從使用者的角度出發，精心規劃並建立流程。我們同時參考了台北捷運GO的評論，以不斷改進，最大化使用實用性，讓使用者在APP操作時能夠毫不費力。這個專案的概要是專注於創造出最優質的使用者體驗，以確保使用者能夠無需費心地輕鬆使用。", // 設計理念
-      imgMain: "/src/assets/media/rolling_main.jpg", // 專案主圖
-      imgSub: "/src/assets/media/rolling_main.jpg", // 專案次圖
+      imgMain: "/src/assets/media/rolling-main.jpg", // 專案主圖
+      imgSub: "./src/assets/media/rolling-main.jpg", // 專案次圖
       imgOther: [
-        "/src/assets/media/rolling_main.jpg",
-        "/src/assets/media/rolling_main.jpg",
+        "/media/rolling-main.jpg",
+        "./media/assets/media/rolling-main.jpg",
       ], // 專案其他圖片
     },
   ]);
