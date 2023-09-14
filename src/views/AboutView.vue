@@ -27,16 +27,16 @@ onMounted(() => {
       <div class="
         flex flex-col
         lg:w-6/12">
-        <p class="text-lg mb-10 leading-relaxed font-TaipeiSansTCBetaRegular
-          lg:text-base">
+        <p class="text-lg mb-8 leading-relaxed
+          lg:text-base lg:leading-loose">
           你好，我是蔡潔儀，高中就讀商業資訊科，熟練多項資訊相關技能，高中時取得乙級電腦軟體應用及TQC等相關證照。但是在高中畢業之際時，我對未來感到迷惘。於是大學就讀國際貿易科，在就讀的同時，剛好有機會能在貿易公司工作。因為高中所學的技能都能應用在工作，並且對工作很拿手。所以在畢業後也持續在貿易公司工作，做了約六年的時間，並在這段期間積累了豐富的經驗。
         </p>
-        <p class="text-lg mb-10 leading-relaxed font-TaipeiSansTCBetaRegular
-          lg:text-base">
+        <p class="text-lg mb-8 leading-relaxed
+          lg:text-base lg:leading-loose">
           儘管工作順利，但是總覺得這個工作不是自己所追求的，於是開始思考自己最想要做什麼。在這個探索的過程中，想起自己對網頁設計有濃厚的興趣，這個興趣源於國小六年級。當時無名小站非常流行，因為喜歡帶有個人風格的版面，便開始自學了CSS，並製作出自己的CSS網頁。但是隨著時間推移，無名小站的消失，也逐漸忘記這段經歷，直到最近才重新回憶起來。
         </p>
-        <p class="text-lg mb-10 leading-relaxed font-TaipeiSansTCBetaRegular
-          lg:text-base">
+        <p class="text-lg mb-8 leading-relaxed
+          lg:text-base lg:leading-loose">
           有了這個明確的目標，我開始了學習之路。自學了CSS和HTML等等前端技術，並參加了Vue的課程。由於對UI/UX也有興趣，也學習了Figma。在最近的幾個月裡，利用待業的時間製作了Rolling電商網站，並製作了個人網站。於是有了版面設計、切版以及資料串接等經驗。未來，我將繼續學習不同的工具和技能，以提高工作效率，並為自己賦予更多的專業價值。
         </p>
       </div>

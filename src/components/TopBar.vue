@@ -13,7 +13,7 @@ const toggleDark = useToggle(isDark);
     <div class="text-xl">
       <router-link to="/">ʝɛ</router-link>
     </div>
-    <div class="w-3 h-3 bg-[#121212] cursor-pointer dark:bg-white" 
+    <div class="w-3 h-3 bg-[#0b0b0b] cursor-pointer dark:bg-white" 
       @click="toggleDark()">
     </div>
   </header>

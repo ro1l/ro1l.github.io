@@ -4,9 +4,10 @@
 
 @layer base {
 	body {
-    @apply bg-white text-black dark:bg-[#121212]	 dark:text-white; 
+    @apply bg-white text-black dark:bg-[#0b0b0b]	 dark:text-white; 
 	}
 }
+
 
 @font-face {
   font-family: 'Lamarkie';

@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        Lamarkie: ["Lamarkie"],
         Melodrama: ["Melodrama-Semibold"],
         TaipeiSansTCBetaLight: ["TaipeiSansTCBeta-Light"],
         TaipeiSansTCBetaRegular: ["TaipeiSansTCBeta-Regular"],
