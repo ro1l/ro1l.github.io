@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       fontFamily: {
         Melodrama: ["Melodrama-Semibold"],
+        TaipeiSansTCBetaLight: ["TaipeiSansTCBeta-Light"],
+        TaipeiSansTCBetaRegular: ["TaipeiSansTCBeta-Regular"],
+        TaipeiSansTCBetaBold: ["TaipeiSansTCBeta-Bold"],
       },
     },
   },
