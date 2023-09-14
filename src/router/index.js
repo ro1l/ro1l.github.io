@@ -18,6 +18,11 @@ const router = createRouter({
       name: "test",
       component: () => import("../views/TestView.vue"),
     },
+    {
+      path: "/:pathMath(.*)*",
+      name: "404",
+      component: () => import("../views//NotFoundView.vue"),
+    },
   ],
   scrollBehavior(to) {
     if (to.hash) {
