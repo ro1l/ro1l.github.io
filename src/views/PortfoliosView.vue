@@ -10,10 +10,32 @@
   import { useDataStore } from '../stores/dataStore';
 
   const store = useDataStore();
+
+
+  import { ref, onMounted } from "vue";
+
+  const portfolios = ref(null);
+
+  let currentPos = window.pageYOffset;
+
+  onMounted(() => {
+    const callDistort = function () {
+      const newPos = window.pageYOffset;
+      const diff = newPos - currentPos;
+      const speed = diff * 0.35;
+  
+      portfolios.value.style.transform = "skewY(" + speed + "deg)";
+      currentPos = newPos;
+      requestAnimationFrame(callDistort);
+    };
+  
+    callDistort();
+  })
+
 </script>
 
 <template>
-  <section id="portfolios" class="w-100 py-60">
+  <section id="portfolios" class="w-100 py-60" ref="portfolios">
     <div class="columns-1 m-auto
       lg:w-3/12">
       <template v-for="portfolio in store.portfolios" :key="portfolio">
