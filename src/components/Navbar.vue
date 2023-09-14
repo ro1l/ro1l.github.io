@@ -25,19 +25,19 @@
   lg:px-12 lg:py-24 lg:w-auto
   lg:flex-col lg:justify-normal lg:items-start">
 
-    <router-link to="/#about" class="lg:mb-3" :class="{ 'py-1 text-2xl lg:text-3xl lg:py-3': props.isAboutActive }">
+    <router-link to="/#about" class="lg:mb-3" :class="{ 'py-1 text-xl lg:text-3xl lg:py-3': props.isAboutActive }">
       about
     </router-link>
 
-    <router-link to="/#skills" class="lg:mb-3 " :class="{ 'py-1 text-2xl lg:text-3xl lg:py-3': isSkillsActive }">
+    <router-link to="/#skills" class="lg:mb-3 " :class="{ 'py-1 text-xl lg:text-3xl lg:py-3': isSkillsActive }">
       skills
     </router-link>
 
-    <router-link to="/#portfolios" class="lg:mb-3 " :class="{ 'py-1 text-2xl lg:text-3xl lg:py-3': isPortfoliosActive }">
+    <router-link to="/#portfolios" class="lg:mb-3 " :class="{ 'py-1 text-xl lg:text-3xl lg:py-3': isPortfoliosActive }">
       portfolios
     </router-link>
   
-    <router-link to="/#contact" class="lg:mb-0" :class="{ 'py-1 text-2xl lg:text-3xl lg:py-3': isContactActive }">
+    <router-link to="/#contact" class="lg:mb-0" :class="{ 'py-1 text-xl lg:text-3xl lg:py-3': isContactActive }">
       contact
     </router-link>
 
