@@ -5,25 +5,31 @@ import { ref, onMounted } from "vue";
 gsap.registerPlugin(ScrollTrigger);
 
 const box = ref(null);
+const about = ref(null);
 
 onMounted(() => {
-  gsap.to(box.value, {
-    x: 200,
+  let tl = gsap.timeline({
     scrollTrigger: {
-      trigger: box.value, // 正确指定触发器元素
-      start: "10% left", // 触发器起始位置
-      end: "start right", // 触发器结束位置
-      scrub: true // 是否随着滚动缓动
+      trigger: about.value,
+      start: "top 70%",
+      end: "bottom 80%",
+      scrub: true,
+      // markers: true,
     }
+  })
+  tl.to(box.value, {
+    y: 200,
+    // x: -50,
   });
 });
 </script>
 
 <template>
-  <section id="about" class="w-100 pt-60 pb-48
+  <section id="about" class="w-100 pt-60 pb-48 relative
     flex justify-center items-center">
     <div class="flex flex-col
-      lg:flex-row">
+      lg:flex-row"
+      ref="about">
       <div class="
         flex flex-col
         lg:w-6/12">
@@ -49,7 +55,7 @@ onMounted(() => {
         </div>
       </div>
     </div>
+    <div class="text-7xl bg-red-800 inline-block
+      absolute top-36 -left-48" ref="box">me</div>
   </section>
-  <!-- <div class="w-10 h-10 bg-green-500" ref="box"></div> -->
-
 </template>
