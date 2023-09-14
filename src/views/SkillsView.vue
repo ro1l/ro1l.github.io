@@ -39,6 +39,10 @@ const skills = reactive([
     name: ['axios', 'async await'],
   },
   {
+    title: 'State Management',
+    name: ['Pinia'],
+  },
+  {
     title: 'Adobe',
     name: ['Photoshop', 'Illustrator', 'Premiere Pro'],
   },

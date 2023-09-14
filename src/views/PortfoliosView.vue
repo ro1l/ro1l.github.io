@@ -14,7 +14,8 @@
 
 <template>
   <section id="portfolios" class="w-100 py-60">
-    <div class="columns-1 w-3/12 m-auto">
+    <div class="columns-1 m-auto
+      lg:w-3/12">
       <template v-for="portfolio in store.portfolios" :key="portfolio">
         <p class="text-sm mb-1.5 font-light">{{ portfolio.name }}</p>
         <img :src="portfolio.imgMain" class="h-72 object-cover mb-16 cursor-pointer" alt="專案圖片"

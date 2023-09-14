@@ -66,7 +66,8 @@ onMounted(() => {
   :isContactActive = isContactActive />
 
 
-  <div class="container w-8/12 ml-auto mr-24" ref="container">
+  <div class="container w-full ml-auto px-10 
+    lg:w-8/12 lg:mr-24 lg:px-0" ref="container">
     <div ref="original">
       <BannerView />
       <AboutView />

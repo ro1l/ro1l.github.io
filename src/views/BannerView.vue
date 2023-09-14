@@ -1,7 +1,9 @@
 <template>
   <div class="w-100 h-screen pb-24
-    flex justify-center items-end">
-    <p class="text-7xl leading-snug">
+    flex justify-center items-center
+    lg:items-end">
+    <p class="text-3xl leading-relaxed
+    lg:text-7xl lg:leading-snug">
       嗨，我是蔡潔儀，<br>
       正在努力追求成為一名<br>
       優秀的前端工程師。<br>
