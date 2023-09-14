@@ -57,8 +57,10 @@ const skills = reactive([
     <section id="skills" class="w-100 py-20">
       <div class="flex flex-col mb-10"
         v-for="item in skills" :key="item.title">
-        <h2 class="text-4xl py-8 border-b border-black">{{ item.title }}</h2>
-          <p class="py-4 border-b border-black" 
+        <h2 class="text-4xl py-8 border-b border-black 
+          dark:border-white">{{ item.title }}</h2>
+          <p class="py-4 border-b border-black
+            dark:border-white" 
             v-for="name in item.name" :key="name">
             {{ name }}
           </p>

@@ -4,7 +4,8 @@ import { RouterView } from 'vue-router';
 
 </script>
 
-<template>
+<template
+  :class="{ 'dark': toggle }">
   <RouterView />
   <TopBar />
 </template>
