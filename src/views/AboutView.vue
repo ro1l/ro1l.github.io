@@ -5,29 +5,39 @@ import { ref, onMounted } from "vue";
 gsap.registerPlugin(ScrollTrigger);
 
 const box = ref(null);
-const about = ref(null);
+const photo = ref(null);
 
 onMounted(() => {
   let tl = gsap.timeline({
     scrollTrigger: {
-      trigger: about.value,
-      start: "top 70%",
-      end: "bottom 80%",
-      scrub: true,
+      trigger: box.value,
+      start: "bottom 71%",
+      end: "+=790",
+      scrub: true, 
       // markers: true,
+      pin: true,
     }
   })
-  tl.to(box.value, {
-    y: 200,
-    // x: -50,
-  });
+  tl.to(box.value , { yPercent: 0, duration: 1 })
+  tl.to(box.value, { yPercent: -10, duration: 3 }) 
+  tl.to(box.value, { yPercent: 10, duration: 3 }) 
+  tl.to(box.value, { yPercent: -10, duration: 3 }) 
+  tl.to(box.value, { yPercent: 10, duration: 3 }) 
+  tl.to(box.value, { yPercent: -10, duration: 3 }) 
+  tl.to(box.value, { yPercent: 10, duration: 3 }) 
+  tl.to(box.value, { yPercent: -10, duration: 3 }) 
+  tl.to(box.value, { yPercent: 10, duration: 3 }) 
+  tl.to(box.value, { yPercent: -10, duration: 3 }) 
+  tl.to(box.value, { yPercent: 10, duration: 3 }) 
+  tl.to(box.value, { yPercent: -10, duration: 3 }) 
+  tl.to(box.value, { yPercent: 10, duration: 3 }) 
 });
 </script>
 
 <template>
   <section id="about" class="w-100 pt-60 pb-48 relative
     flex justify-center items-center">
-    <div class="flex flex-col
+    <div class="flex flex-col-reverse
       lg:flex-row"
       ref="about">
       <div class="
@@ -50,12 +60,14 @@ onMounted(() => {
       <div class="h-100 mb-10
         lg:w-6/12">
         <div class="flex justify-center items-center">
-          <img class="object-cover h-56 w-7/12
-            lg:w-4/12" src="../assets/media/personal-photos2.jpg" alt="">
+          <img class="object-cover h-56 w-full mb-8
+            lg:w-4/12" src="../assets/media/personal-photos2.jpg" alt="me"
+            ref="photo">
         </div>
       </div>
     </div>
-    <div class="text-7xl bg-red-800 inline-block
-      absolute top-36 -left-48" ref="box">me</div>
+    <div class="text-6xl hidden
+      absolute top-5 -left-56 z-50
+      lg:inline-block" ref="box">me</div>
   </section>
 </template>
