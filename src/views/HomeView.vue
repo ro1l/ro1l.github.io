@@ -35,13 +35,13 @@ const isPortfoliosActive = useElementVisibility('portfolios');
 const isContactActive = useElementVisibility('contact');
 
 
-const container = ref(null);
+const wrapper = ref(null);
 const original = ref(null);
 
 
 onMounted(() => {
   const cloned = original.value.cloneNode(true);
-  container.value.appendChild(cloned)
+  wrapper.value.appendChild(cloned)
   
   const threshold = 120
   window.scrollTo(0, threshold)
@@ -67,7 +67,7 @@ onMounted(() => {
 
 
   <div class="container w-full ml-auto px-10 
-    lg:w-8/12 lg:mr-24 lg:px-0" ref="container">
+    lg:w-8/12 lg:mr-24 lg:px-0" ref="wrapper">
     <div ref="original">
       <BannerView />
       <AboutView />
