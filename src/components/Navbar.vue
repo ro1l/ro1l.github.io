@@ -52,7 +52,7 @@
 </script>
 
 <template>
-  <nav class="w-full py-4 fixed bottom-0 left-0 bg-white bg-opacity-50 backdrop-blur-sm
+  <nav class="w-full py-4 z-50 fixed bottom-0 left-0 bg-white bg-opacity-70 backdrop-blur-sm
   flex justify-evenly items-center
   dark:bg-[#0b0b0b] dark:bg-opacity-10
   lg:px-12 lg:py-24 lg:w-auto
